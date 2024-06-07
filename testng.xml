@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Bright Star/IdeaProjects/ecommerce">
+        <classes>
+            <class name="tests.AddToCartTest">
+                <methods>
+                    <include name="SearchForMacProduct"/>
+                    <include name="NavigateToMacProduct"/>
+                    <include name="addProductToCart"/>
+                </methods>
+            </class>
+            <class name="tests.CheckOutTest">
+                <methods>
+                    <include name="NavigateToRegisterPage"/>
+                    <include name="RegisterNewUser"/>
+                    <include name="navigateToLoginPage"/>
+                    <include name="Login"/>
+                    <include name="SearchForMacProduct"/>
+                    <include name="NavigateToMacProduct"/>
+                    <include name="addProductToCart"/>
+                    <include name="navigateToCheckOut"/>
+                    <include name="completeCheckOut"/>
+                </methods>
+            </class>
+            <class name="tests.ContactUsTest">
+                <methods>
+                    <include name="navigateToContactUsPage"/>
+                    <include name="UseContactUs"/>
+                </methods>
+            </class>
+            <class name="tests.LogInTest">
+                <methods>
+                    <include name="NavigateToRegisterPage"/>
+                    <include name="RegisterNewUser"/>
+                    <include name="navigateToLoginPage"/>
+                    <include name="Login"/>
+                </methods>
+            </class>
+            <class name="tests.RegisterTest">
+                <methods>
+                    <include name="NavigateToRegisterPage"/>
+                    <include name="RegisterNewUser"/>
+                </methods>
+            </class>
+            <class name="tests.EmailToFriendTest">
+                <methods>
+                    <include name="NavigateToRegisterPage"/>
+                    <include name="RegisterNewUser"/>
+                    <include name="navigateToLoginPage"/>
+                    <include name="Login"/>
+                    <include name="SearchForMacProduct"/>
+                    <include name="NavigateToMacProduct"/>
+                    <include name="navigateToSendEmailPage"/>
+                    <include name="sendEmailToFriend"/>
+                </methods>
+            </class>
+            <class name="tests.SearchTest">
+                <methods>
+                    <include name="SearchForMacProduct"/>
+                    <include name="NavigateToMacProduct"/>
+                </methods>
+            </class>
+            <class name="tests.HoverTest">
+                <methods>
+                    <include name="HoverOverComputer"/>
+                    <include name="HoverOverElectronics"/>
+                    <include name="HoverOverApparel"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
